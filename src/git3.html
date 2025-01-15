@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chaos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+
+    </style>
+</head>
+<body class="flex flex-col bg-slate-800/90 p-8 h-screen justify-start items-center text-slate-300 text-md">
+    <svg height="32" aria-hidden="true" viewBox="0 0 24 24" version="1.1" width="32" data-view-component="true" class="absolute left-8 top-8 opacity-20 scale-150 cursor-pointer octicon octicon-mark-github v-align-middle text-white">
+        <path fill="currentColor" d="M12.5.75C6.146.75 1 5.896 1 12.25c0 5.089 3.292 9.387 7.863 10.91.575.101.79-.244.79-.546 0-.273-.014-1.178-.014-2.142-2.889.532-3.636-.704-3.866-1.35-.13-.331-.69-1.352-1.18-1.625-.402-.216-.977-.748-.014-.762.906-.014 1.553.834 1.769 1.179 1.035 1.74 2.688 1.25 3.349.948.1-.747.402-1.25.733-1.538-2.559-.287-5.232-1.279-5.232-5.678 0-1.25.445-2.285 1.178-3.09-.115-.288-.517-1.467.115-3.048 0 0 .963-.302 3.163 1.179.92-.259 1.897-.388 2.875-.388.977 0 1.955.13 2.875.388 2.2-1.495 3.162-1.179 3.162-1.179.633 1.581.23 2.76.115 3.048.733.805 1.179 1.825 1.179 3.09 0 4.413-2.688 5.39-5.247 5.678.417.36.776 1.05.776 2.128 0 1.538-.014 2.774-.014 3.162 0 .302.216.662.79.547C20.709 21.637 24 17.324 24 12.25 24 5.896 18.854.75 12.5.75Z"></path>
+    </svg>
+    <div class="flex max-w-6xl flex-col items-start w-full h-full px-6 py-2 font-mono">
+        <div class="flex mb-5">
+            chartjs / ChartJS
+        </div>
+        <div class="flex mb-6 text-base w-[48rem] justify-start text-slate-400 stroke-slate-300">
+            <div class="flex items-center">
+                <div class="mr-4 h-10 p-2 cursor-pointer border-b-4 border-indigo-500 bg-indigo-500/10 transition-all duration-300">Summary</div>
+            </div>
+            <div class="flex items-center">
+                <svg aria-hidden="true" height="12" viewBox="0 0 16 16" version="1.1" width="12" data-view-component="true" class="octicon octicon-issue-opened UnderlineNav-octicon d-none d-sm-inline">
+                    <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"></path><path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0ZM1.5 8a6.5 6.5 0 1 0 13 0 6.5 6.5 0 0 0-13 0Z"></path>
+                </svg>
+                <div class="mr-4 h-10 p-2 cursor-pointer transition-all duration-300">Issues</div>
+            </div>
+            <div class="flex items-center">
+                <svg aria-hidden="true" height="12" viewBox="0 0 16 16" version="1.1" width="12" data-view-component="true" class="octicon octicon-issue-opened UnderlineNav-octicon d-none d-sm-inline">
+                    <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"></path><path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0ZM1.5 8a6.5 6.5 0 1 0 13 0 6.5 6.5 0 0 0-13 0Z"></path>
+                </svg>
+                <div class="mr-4 h-10 p-2 cursor-pointer transition-all duration-300">Issues</div>
+            </div>
+            <div class="flex items-center">
+                <svg aria-hidden="true" height="12" viewBox="0 0 16 16" version="1.1" width="12" data-view-component="true" class="octicon octicon-issue-opened UnderlineNav-octicon d-none d-sm-inline">
+                    <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"></path><path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0ZM1.5 8a6.5 6.5 0 1 0 13 0 6.5 6.5 0 0 0-13 0Z"></path>
+                </svg>
+                <div class="mr-4 h-10 p-2 cursor-pointer transition-all duration-300">Pull requests</div>
+            </div>
+            <div class="flex items-center">
+                <svg aria-hidden="true" height="12" viewBox="0 0 16 16" version="1.1" width="12" data-view-component="true" class="octicon octicon-issue-opened UnderlineNav-octicon d-none d-sm-inline">
+                    <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"></path><path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0ZM1.5 8a6.5 6.5 0 1 0 13 0 6.5 6.5 0 0 0-13 0Z"></path>
+                </svg>
+                <div class="mr-4 h-10 p-2 cursor-pointer transition-all duration-300">Discussion</div>
+            </div>
+            <div class="flex items-center">
+                <svg aria-hidden="true" height="12" viewBox="0 0 16 16" version="1.1" width="12" data-view-component="true" class="octicon octicon-issue-opened UnderlineNav-octicon d-none d-sm-inline">
+                    <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"></path><path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0ZM1.5 8a6.5 6.5 0 1 0 13 0 6.5 6.5 0 0 0-13 0Z"></path>
+                </svg>
+                <div class="mr-4 h-10 p-2 cursor-pointer transition-all duration-300">Actions</div>
+            </div>
+        </div>
+        <div class="flex w-full max-w-[48rem] mb-5 items-center justify-between">
+            <div class="flex items-center">
+                <div>
+                    <img class="avatar mr-2 d-none d-md-block" alt="Owner avatar" src="https://avatars.githubusercontent.com/u/10342521?s=48&amp;v=4" width="24" height="24"> 
+                </div>
+                <div class="font-semibold">Chart.JS</div>
+                <div class="text-xs ring-1 text-slate-400 ring-slate-600 rounded-xl ml-3 p-2 h-6 flex items-center justify-center">Public</div>
+            </div>
+            <div class="flex">
+                <button class="bg-slate-600/60 h-6 stroke-slate-400 mx-1 flex items-center justify-center text-neutral-300 px-2 py-2 rounded-md text-xs ring-1 ring-slate-400/50">
+                    <svg aria-hidden="true" height="12" viewBox="0 0 16 16" version="1.1" width="12" data-view-component="true" class="octicon octicon-eye mr-2">
+                        <path d="M8 2c1.981 0 3.671.992 4.933 2.078 1.27 1.091 2.187 2.345 2.637 3.023a1.62 1.62 0 0 1 0 1.798c-.45.678-1.367 1.932-2.637 3.023C11.67 13.008 9.981 14 8 14c-1.981 0-3.671-.992-4.933-2.078C1.797 10.83.88 9.576.43 8.898a1.62 1.62 0 0 1 0-1.798c.45-.677 1.367-1.931 2.637-3.022C4.33 2.992 6.019 2 8 2ZM1.679 7.932a.12.12 0 0 0 0 .136c.411.622 1.241 1.75 2.366 2.717C5.176 11.758 6.527 12.5 8 12.5c1.473 0 2.825-.742 3.955-1.715 1.124-.967 1.954-2.096 2.366-2.717a.12.12 0 0 0 0-.136c-.412-.621-1.242-1.75-2.366-2.717C10.824 4.242 9.473 3.5 8 3.5c-1.473 0-2.825.742-3.955 1.715-1.124.967-1.954 2.096-2.366 2.717ZM8 10a2 2 0 1 1-.001-3.999A2 2 0 0 1 8 10Z"></path>
+                    </svg>   
+                    watch
+                    <svg aria-hidden="true" height="12" viewBox="0 0 16 16" version="1.1" width="12" data-view-component="true" class="octicon octicon-triangle-down ml-1">
+                        <path fill="currentColor" d="M4.427 7.427l3.396 3.396a.25.25 0 00.354 0l3.396-3.396A.25.25 0 0011.396 7H4.604a.25.25 0 00-.177.427z"></path>
+                    </svg>
+                </button>
+                <button class="bg-slate-600/60 h-6 stroke-slate-400 mx-1 flex items-center justify-center text-neutral-300 px-2 py-2 rounded-md text-xs ring-1 ring-slate-400/50">
+                    <svg aria-hidden="true" height="12" viewBox="0 0 16 16" version="1.1" width="12" data-view-component="true" class="octicon octicon-repo-forked mr-2">
+                        <path d="M5 5.372v.878c0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75v-.878a2.25 2.25 0 1 1 1.5 0v.878a2.25 2.25 0 0 1-2.25 2.25h-1.5v2.128a2.251 2.251 0 1 1-1.5 0V8.5h-1.5A2.25 2.25 0 0 1 3.5 6.25v-.878a2.25 2.25 0 1 1 1.5 0ZM5 3.25a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Zm6.75.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm-3 8.75a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Z"></path>
+                    </svg>                
+                    fork
+                    <svg aria-hidden="true" height="12" viewBox="0 0 16 16" version="1.1" width="12" data-view-component="true" class="octicon octicon-triangle-down ml-1">
+                        <path fill="currentColor" d="M4.427 7.427l3.396 3.396a.25.25 0 00.354 0l3.396-3.396A.25.25 0 0011.396 7H4.604a.25.25 0 00-.177.427z"></path>
+                    </svg>
+                </button>
+                <button class="bg-slate-600/60 h-6 stroke-slate-400 mx-1 flex items-center justify-center text-neutral-300 px-2 py-2 rounded-md text-xs ring-1 ring-slate-400/50">
+                    <svg aria-hidden="true" height="12" viewBox="0 0 16 16" version="1.1" width="12" data-view-component="true" class="octicon octicon-star mr-2">
+                        <path d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Zm0 2.445L6.615 5.5a.75.75 0 0 1-.564.41l-3.097.45 2.24 2.184a.75.75 0 0 1 .216.664l-.528 3.084 2.769-1.456a.75.75 0 0 1 .698 0l2.77 1.456-.53-3.084a.75.75 0 0 1 .216-.664l2.24-2.183-3.096-.45a.75.75 0 0 1-.564-.41L8 2.694Z"></path>
+                    </svg> 
+                    star
+                    <svg aria-hidden="true" height="12" viewBox="0 0 16 16" version="1.1" width="12" data-view-component="true" class="octicon octicon-triangle-down ml-1">
+                        <path fill="currentColor" d="M4.427 7.427l3.396 3.396a.25.25 0 00.354 0l3.396-3.396A.25.25 0 0011.396 7H4.604a.25.25 0 00-.177.427z"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div class="flex w-full max-w-[48rem] mb-5 items-center justify-between">
+            <div class="flex">
+                <button class="bg-slate-600/60 h-7 flex items-center justify-center text-neutral-300 px-4 py-2 rounded-md text-sm ring-1 ring-slate-400/50">clone</button>
+                <button class="h-7 flex items-center justify-center text-neutral-400 px-2 ml-2 py-2 rounded-md text-sm hover:bg-slate-600/50 transition-all"><span class="text-slate-300 mr-1">7</span>branches</button>
+                <button class="h-7 flex items-center justify-center text-neutral-400 px-2 py-2 rounded-md text-sm hover:bg-slate-600/50 transition-all"><span class="text-slate-300 mr-1">117</span>tags</button>
+            </div>
+            <div class="flex">
+                <input type="search" placeholder="Go to file" class="bg-slate-600/60 h-7 text-neutral-300 pl-6 mr-4 py-2 rounded-md text-sm ring-1 ring-slate-400/50 outline-none"/>
+                <button class="bg-green-600/60 h-7 flex items-center font-semibold justify-center text-neutral-300 p-3 rounded-md text-sm ring-1 ring-slate-700">Code</button>
+            </div>
+        </div>
+        <div class="flex w-full max-h-[46rem] h-full">
+            <div class="w-[48rem] mr-5 bg-slate-700/60 rounded-md flex flex-col ring-slate-500 ring-1 relative">
+                <div class="bg-slate-600/80 w-full h-12 border-b-[0.8px] border-slate-400"></div>
+                <div class="flex items-center justify-center p-4 h-full">
+                    <div class="text-neutral-300/90 text-2xl font-extralight mr-3">
+                        <div>Files</div>
+                        <div>Friends</div>
+                        <div>Filing</div>
+                        <div>Neo</div>
+                    </div>
+                    <div class="w-12 h-12 bg-slate-400/60 rounded-full ring-slate-500 ring-1"></div>
+                </div>
+            </div>
+            <div class="px-4 py-2 flex-1 max-w-2xl bg-slate-700/60 rounded-md flex flex-col relative">
+                <div class="text-base mb-2">
+                    Simple HTML5 Charts using the canvas element
+                </div>
+                <div class="flex text-sm stroke-gray-400 my-3">
+                    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-link flex-shrink-0 mr-2">
+                        <path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path>
+                    </svg> 
+                    <a href="www.chartjs.org" class="hover:text-indigo-400 text-indigo-300 hover:underline">www.chartjs.org</a>
+                </div>
+                <div class="flex flex-col text-xs max-w-[10rem] mt-2">
+                    <div class="flex">
+                        <div class="bg-slate-800/30 mt-2 mx-1 cursor-pointer rounded-xl text-blue-400 p-4 h-4 flex items-center justify-center">javascript</div>
+                        <div class="bg-slate-800/30 mt-2 mx-1 cursor-pointer rounded-xl text-blue-400 p-4 h-4 flex items-center justify-center">chart</div>
+                        <div class="bg-slate-800/30 mt-2 mx-1 cursor-pointer rounded-xl text-blue-400 p-4 h-4 flex items-center justify-center">html</div>
+                    </div>
+                    <div class="flex">
+                        <div class="bg-slate-800/30 mt-2 mx-1 cursor-pointer rounded-xl text-blue-400 p-4 h-4 flex items-center justify-center">graph</div>
+                    </div>
+                </div>
+                <div class="w-full h-fit mt-4">
+                    <div class="text-xl mb-2">Languages</div>
+                    <div class="w-full h-2 flex">
+                        <div class="bg-yellow-200/80 h-full w-3/4 rounded-lg"></div>
+                        <div class="bg-blue-400/80 h-full w-1/4 rounded-lg"></div>
+                    </div>
+                    <div class="mt-3 font-bold">
+                        <div class="flex text-xs items-center cursor-pointer">
+                            <div class="bg-yellow-200/80 h-2 w-2 rounded-full mr-2"></div>
+                            <span class="mr-2">Javascript</span>
+                            <span class="text-slate-400">89.1%</span>
+                        </div>
+                        <div class="mt-1 flex text-xs items-center cursor-pointer">
+                            <div class="bg-blue-200/80 h-2 w-2 rounded-full mr-2"></div>
+                            <span class="mr-2">Typescript</span>
+                            <span class="text-slate-400">10.5%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w-full mt-6 text-gray-400 stroke-gray-300 font-extralight">
+                    <div class="flex items-center text-sm my-1 cursor-pointer">
+                        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-book mr-2">
+                            <path d="M0 1.75A.75.75 0 0 1 .75 1h4.253c1.227 0 2.317.59 3 1.501A3.743 3.743 0 0 1 11.006 1h4.245a.75.75 0 0 1 .75.75v10.5a.75.75 0 0 1-.75.75h-4.507a2.25 2.25 0 0 0-1.591.659l-.622.621a.75.75 0 0 1-1.06 0l-.622-.621A2.25 2.25 0 0 0 5.258 13H.75a.75.75 0 0 1-.75-.75Zm7.251 10.324.004-5.073-.002-2.253A2.25 2.25 0 0 0 5.003 2.5H1.5v9h3.757a3.75 3.75 0 0 1 1.994.574ZM8.755 4.75l-.004 7.322a3.752 3.752 0 0 1 1.992-.572H14.5v-9h-3.495a2.25 2.25 0 0 0-2.25 2.25Z"></path>
+                        </svg>
+                        Readme
+                    </div>
+                    <div class="flex items-center text-sm my-1 cursor-pointer">
+                        <svg text="gray" aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-pulse mr-2">
+                            <path d="M6 2c.306 0 .582.187.696.471L10 10.731l1.304-3.26A.751.751 0 0 1 12 7h3.25a.75.75 0 0 1 0 1.5h-2.742l-1.812 4.528a.751.751 0 0 1-1.392 0L6 4.77 4.696 8.03A.75.75 0 0 1 4 8.5H.75a.75.75 0 0 1 0-1.5h2.742l1.812-4.529A.751.751 0 0 1 6 2Z"></path>
+                        </svg>                       
+                        Activity
+                    </div>
+                    <div class="flex items-center text-sm my-1 cursor-pointer">
+                        <svg text="gray" aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-pulse mr-2">
+                            <path d="M6 2c.306 0 .582.187.696.471L10 10.731l1.304-3.26A.751.751 0 0 1 12 7h3.25a.75.75 0 0 1 0 1.5h-2.742l-1.812 4.528a.751.751 0 0 1-1.392 0L6 4.77 4.696 8.03A.75.75 0 0 1 4 8.5H.75a.75.75 0 0 1 0-1.5h2.742l1.812-4.529A.751.751 0 0 1 6 2Z"></path>
+                        </svg>                       
+                        Custom Properties
+                    </div>
+                    <div class="flex items-center text-sm my-1 cursor-pointer">
+                        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-star mr-2">
+                            <path d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Zm0 2.445L6.615 5.5a.75.75 0 0 1-.564.41l-3.097.45 2.24 2.184a.75.75 0 0 1 .216.664l-.528 3.084 2.769-1.456a.75.75 0 0 1 .698 0l2.77 1.456-.53-3.084a.75.75 0 0 1 .216-.664l2.24-2.183-3.096-.45a.75.75 0 0 1-.564-.41L8 2.694Z"></path>
+                        </svg>                     
+                        Stars
+                    </div>
+                    <div class="flex items-center text-sm my-1 cursor-pointer">
+                        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-eye mr-2">
+                            <path d="M8 2c1.981 0 3.671.992 4.933 2.078 1.27 1.091 2.187 2.345 2.637 3.023a1.62 1.62 0 0 1 0 1.798c-.45.678-1.367 1.932-2.637 3.023C11.67 13.008 9.981 14 8 14c-1.981 0-3.671-.992-4.933-2.078C1.797 10.83.88 9.576.43 8.898a1.62 1.62 0 0 1 0-1.798c.45-.677 1.367-1.931 2.637-3.022C4.33 2.992 6.019 2 8 2ZM1.679 7.932a.12.12 0 0 0 0 .136c.411.622 1.241 1.75 2.366 2.717C5.176 11.758 6.527 12.5 8 12.5c1.473 0 2.825-.742 3.955-1.715 1.124-.967 1.954-2.096 2.366-2.717a.12.12 0 0 0 0-.136c-.412-.621-1.242-1.75-2.366-2.717C10.824 4.242 9.473 3.5 8 3.5c-1.473 0-2.825.742-3.955 1.715-1.124.967-1.954 2.096-2.366 2.717ZM8 10a2 2 0 1 1-.001-3.999A2 2 0 0 1 8 10Z"></path>
+                        </svg>                       
+                        Watching
+                    </div>
+                </div>
+
+                <div class="flex flex-col">
+                    <div class="flex items-center mt-3">
+                        <div class="mr-2">Releases</div>
+                        <div class="bg-slate-600 text-xs p-2 rounded-2xl">100</div>
+                    </div>
+                    <div class="flex-col items-center mt-3 text-sm stroke-green-300">
+                        <div class="flex items-center mb-1">
+                            <div class="mr-2">
+                                <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-tag flex-shrink-0 mt-1 color-fg-success">
+                                    <path d="M1 7.775V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 0 1 0 2.474l-5.026 5.026a1.75 1.75 0 0 1-2.474 0l-6.25-6.25A1.752 1.752 0 0 1 1 7.775Zm1.5 0c0 .066.026.13.073.177l6.25 6.25a.25.25 0 0 0 .354 0l5.025-5.025a.25.25 0 0 0 0-.354l-6.25-6.25a.25.25 0 0 0-.177-.073H2.75a.25.25 0 0 0-.25.25ZM6 5a1 1 0 1 1 0 2 1 1 0 0 1 0-2Z"></path>
+                                </svg>
+                            </div>
+                            <div class="mr-2">v7.7.1</div>
+                            <div class="ring-green-400/60 ring-1 h-5 flex items-center justify-center text-xs p-2 rounded-xl text-green-300">Latest</div>
+                        </div>
+                        <div class="text-gray-400 ml-6">on Dec 1, 2023</div>
+                        <div class="text-blue-400 ml-1 mt-3">+ 112 releases</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
